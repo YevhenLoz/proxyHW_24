@@ -17,13 +17,11 @@ class TxtProxyWriterReader:
             self.__is_actual = True
             return self.__result
 
-    def write_file(self):
-        if self.__is_actual:
-            self.__result = self.__txt_writer.write('Cool code2')
+    def write_file(self):        
+            self.__result = self.__txt_writer.write('Cool code3')
             self.__is_actual = False
             return self.__result
-        else:
-            return self.__result
+        
 
 
 if __name__ == '__main__':
